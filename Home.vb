@@ -12,4 +12,8 @@
         signUpForm.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Homelb_Click(sender As Object, e As EventArgs) Handles Homelb.Click
+
+    End Sub
 End Class
