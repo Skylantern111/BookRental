@@ -29,6 +29,7 @@ Partial Class LogIn
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
+        ShowPasswordCheckBox = New CheckBox()
         SuspendLayout()
         ' 
         ' UsernameTxt
@@ -90,11 +91,21 @@ Partial Class LogIn
         Label3.TabIndex = 6
         Label3.Text = "LOG IN "
         ' 
+        ' ShowPasswordCheckBox
+        ' 
+        ShowPasswordCheckBox.AutoSize = True
+        ShowPasswordCheckBox.Location = New Point(503, 214)
+        ShowPasswordCheckBox.Name = "ShowPasswordCheckBox"
+        ShowPasswordCheckBox.Size = New Size(15, 14)
+        ShowPasswordCheckBox.TabIndex = 7
+        ShowPasswordCheckBox.UseVisualStyleBackColor = True
+        ' 
         ' LogIn
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(ShowPasswordCheckBox)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -115,5 +126,6 @@ Partial Class LogIn
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents ShowPasswordCheckBox As CheckBox
 
 End Class
